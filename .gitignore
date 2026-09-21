@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# Fetched or generated locally — see scripts/. `benchmarks` has no trailing
+# slash so it also covers a symlink to a dataset that lives elsewhere.
+data/
+benchmarks
+hf_iqa/
+imagenet-1k/
+
+# Training output (train.py writes experiments/<exp_name>/)
+experiments/
+
+# Released weights live on the HuggingFace Hub; only metadata.json and the
+# model card are tracked here.
+checkpoints/*.pth
+
+.DS_Store

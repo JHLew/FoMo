@@ -1,0 +1,31 @@
+# Conda environment for FoMo — metric use, training, data generation, evaluation.
+#
+#   conda env create -f environment.yml
+#   conda activate fomo
+#
+# Run from the repository root: the final `-e .` installs the fomo package in
+# editable mode. CUDA 12.x wheels; Python 3.12.
+name: fomo
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - torch==2.9.1
+      - torchvision==0.24.1
+      - transformers==4.57.3
+      - diffusers==0.37.1
+      - huggingface_hub
+      - lpips==0.1.4
+      - DISTS-pytorch==0.1
+      - dreamsim==0.2.1
+      - peft
+      - torch-ema==0.3
+      - numpy
+      - scipy
+      - pillow
+      - tqdm
+      - tensorboard
+      - sentencepiece   # FLUX text encoder (T5) tokenizer
+      - -e .

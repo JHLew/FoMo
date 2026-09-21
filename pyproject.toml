@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Distribution "fomo-iqa" (the bare name is taken on PyPI); import package `fomo`.
+name = "fomo-iqa"
+version = "0.1.1"
+description = "FoMo: Forking Moment in Generative Trajectory as a Perceptual Distance — reference-based perceptual distance models trained on diffusion-generated (FLUX) image pairs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Jaihyun Lew" }]
+keywords = ["image-quality-assessment", "perceptual-metric", "perceptual-loss", "IQA"]
+
+# Runtime dependencies for using the released models. Training, data
+# generation and benchmark evaluation need the extras in environment.yml.
+dependencies = [
+    "torch>=2.1",
+    "torchvision",
+    "transformers>=4.56",
+    "huggingface_hub",
+    "lpips>=0.1.4",
+    "DISTS-pytorch>=0.1",
+    "dreamsim>=0.2.1",
+    "peft",
+    "numpy",
+    "pillow",
+]
+
+[project.urls]
+Homepage = "https://github.com/JHLew/FoMo"
+
+[tool.setuptools]
+packages = ["fomo"]
