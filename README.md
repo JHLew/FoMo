@@ -186,7 +186,16 @@ SROCC / KROCC / PLCC of the released checkpoints (native resolution; PLCC after 
 
 ## Citation
 
-The paper is under review; citation information will be added here.
+[Paper](https://arxiv.org/abs/2609.25716) · [Project page](https://jhlew.github.io/FoMo/)
+
+```bibtex
+@inproceedings{lew2026fomo,
+  title     = {FoMo: Forking Moment in Generative Trajectory as a Perceptual Distance},
+  author    = {Lew, Jaihyun and Jung, Mingi and Park, Minjun and Song, Wooseok and Yoon, Sungroh},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026}
+}
+```
 
 ## License
 
